@@ -12,7 +12,7 @@
   var h = d.getHours();
   var m = d.getMinutes();
   var am = true;
-  if (h > 12) {
+  if (h >= 12) {
     am = false;
     h = h - 12;
   } else if (h == 0) {
@@ -48,7 +48,8 @@ require("heatshrink").decompress(atob("mEwwhC/AH4AbhvQC6vd7oXshoXBJB4oEC441KCIgE
   // morning
   if (am) {
   g.reset();
-  g.setBgColor("##F6A21E"); // orange
+  g.setFontAlign(0,0).setFont("Vector",18);
+  g.setBgColor("#F6A21E"); // orange
   g.fillRect(0, 0, 175, 175);
   g.setColor("#FDFDFD");  
   g.drawString("Good morning!", g.getWidth()/2, 40, false);
@@ -58,7 +59,7 @@ require("heatshrink").decompress(atob("mEwwhC/AH4AbhvQC6vd7oXshoXBJB4oEC441KCIgE
   } else if ((h >= 8) && (m >= 0)) {
   g.reset();
   g.setFontAlign(0,0).setFont("Vector",18);
-  g.setBgColor("#050A30");// dark blue
+  g.setBgColor("#050A30"); // dark blue
   g.fillRect(0, 0, 175, 175);
   g.setColor("#FDFDFD");  
   g.drawString("Good night!", g.getWidth()/2, 35, false);
@@ -78,6 +79,7 @@ require("heatshrink").decompress(atob("mEwwhC/AH4AbhvQC6vd7oXshoXBJB4oEC441KCIgE
   // afternoon
   } else {
   g.reset();
+  g.setFontAlign(0,0).setFont("Vector",18);
   g.setBgColor("#68BBE3"); // bright blue 
   g.fillRect(0, 0, 175, 175);
   g.setColor("#FDFDFD");  

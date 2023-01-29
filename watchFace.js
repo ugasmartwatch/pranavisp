@@ -90,8 +90,6 @@ require("heatshrink").decompress(atob("mEwwhC/AH4AbhvQC6vd7oXshoXBJB4oEC441KCIgE
   // Name
   g.setFontAlign(0,0).setFont("Vector",32);
   g.setColor("#FDFDFD");  
- // g.drawString("Pranavi!", g.getWidth()/2, 70, false);
-
   
   // draw the current time (4x size 7 segment)
   g.setFont("7x11Numeric7Seg",3.5);

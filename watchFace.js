@@ -43,13 +43,15 @@ require("heatshrink").decompress(atob("mEwwhC/AH4AbhvQC6vd7oXshoXBJB4oEC441KCIgE
     var moon =
         
         require("heatshrink").decompress(atob("slkwhC/AH4A/AH4A/AH4A/AH4A/AH4A/AH4AEiIABF94xsgItBilBGFYvCp3kiMQMNcU93uMVYwBiQwB8QwsMIXumIxqGAnuYtRiBlwwCe4ILEG0kRjwvBonukIrEGMhiBGAMhpyUBBgkSkIXJHjERFoPkZAKUEHgMv+TOIGLBiDoICB8IfEif//8xDA5uKYqIACGIsBn/zLIxuMGJwwEMwIxF+c/Eo5uLShsSYQLIBAAL4FLILGJNxD3RYoQxIAQIxINxKUP8jID8gxFPhZuJC5sUeYKUDGKRuJC5pgBoiUD8KBVYynjSgYxrSgoxpYwUhGAYxqYwwxsYwgxpfAPkYwgxqfAwxsGAgxpinukIxF8kRfEwxBogxTHzIxJ9wxniXuAIIxRgMiarEBj3uAIIAFoIkJiMS/8hMq4xK8IxJgM///zMi4xKfRcT/8xSrQAIGJUfmfxEJBsOGJbILAAIxjZBQJBgI8IGJ8SGJLILEBIxQigxJSxafKGLfhMiJiBIyAxL9xPPMQUUoISQGJZkQMQNOO6AxMMiERiQSBGKFOGJfkGRpiBnwRBbSEeMhlBGRaTCIYLaQGJwyLiMRibaCGKMUGJoyCGYoGBYgQOCGKD6OGQoAFcIjGQfR7+EogvDogLE8QxSZB4ANYyLISURoxSZCIALSiQxCSzXkGKiWbkKUTMgUuSjIxWSzHhSiiWCfbBiWMjL3VMjZiYMgUSYtZkFpyTTMTJkCS6VBMTQyDigwuS4QyOGAKTbGSQwhGQcRob0JGEQyEilElwuB8VEMAIwkfwYAIF8ozJF9IA/AH4A/AH4A/AH4A/AH4A/AH4A/ADIA="));
+    
+    /* var sunSet = */
         
   
   // morning
   if (am) {
   g.reset();
   g.setFontAlign(0,0).setFont("Vector",18);
-  g.setBgColor("#F6A21E"); // orange
+  g.setColor("#F6A21E"); // orange
   g.fillRect(0, 0, 175, 175);
   g.setColor("#FDFDFD");  
   g.drawString("Good morning!", g.getWidth()/2, 40, false);
@@ -59,7 +61,7 @@ require("heatshrink").decompress(atob("mEwwhC/AH4AbhvQC6vd7oXshoXBJB4oEC441KCIgE
   } else if ((h >= 8) && (m >= 0)) {
   g.reset();
   g.setFontAlign(0,0).setFont("Vector",18);
-  g.setBgColor("#050A30"); // dark blue
+  g.setColor("#050A30"); // dark blue
   g.fillRect(0, 0, 175, 175);
   g.setColor("#FDFDFD");  
   g.drawString("Good night!", g.getWidth()/2, 35, false);
@@ -80,7 +82,7 @@ require("heatshrink").decompress(atob("mEwwhC/AH4AbhvQC6vd7oXshoXBJB4oEC441KCIgE
   } else {
   g.reset();
   g.setFontAlign(0,0).setFont("Vector",18);
-  g.setBgColor("#68BBE3"); // bright blue 
+  g.setColor("#0D5F8A"); // bright blue 
   g.fillRect(0, 0, 175, 175);
   g.setColor("#FDFDFD");  
   g.drawString("Good afternoon!", g.getWidth()/2, 35, false);
